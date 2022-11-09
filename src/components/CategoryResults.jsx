@@ -3,9 +3,7 @@ import Highlighter from "react-highlight-words";
 import uuid from 'react-uuid';
 export const CategoryResults = ({ speciesContextList, filteredSpecies, searchedWord, setfilteredSpecies, foundLength, setfoundLength }) => {
     let totalLists = speciesContextList.length
-    useEffect(() => {
-        speciesContextList.forEach((species) => species['id'] = uuid())
-    }, [])
+    filteredSpecies.forEach((species) => species['identity'] = uuid())
 
 
     useEffect(() => {
@@ -29,10 +27,10 @@ export const CategoryResults = ({ speciesContextList, filteredSpecies, searchedW
         setfoundLength(lengthFind.length)
 
     }, [searchedWord])
-    const [accordionActive, setaccordionActive] = useState(false)
+
     const AccordionHandler = (e, id) => {
         let openAcc = filteredSpecies.filter((accordion) => {
-            if (accordion.id === id) {
+            if (accordion.identity === id) {
                 accordion['active'] = !accordion.active
 
             }
@@ -63,7 +61,7 @@ export const CategoryResults = ({ speciesContextList, filteredSpecies, searchedW
                                 </h3>
                             </div>
 
-                            {/* <h3>{species.question}</h3> */}
+                           
                             <p className={`${species.active ? 'd-block' : ''}`}>{species.answer}</p>
                         </div>
                     )
