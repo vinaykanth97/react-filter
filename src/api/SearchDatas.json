@@ -1,0 +1,38 @@
+[
+   {
+      "category": "animals",
+      "id": 1,
+      "question": "How many species of tiger are there?",
+      "answer": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor mollitia labore, saepe minus sit laboriosam quis. Reprehenderit incidunt, repellendus magnam voluptatum nisi, dolores perspiciatis ipsum odio dolore, neque ullam."
+   },
+   {
+      "category": "animals",
+      "id": 1,
+      "question": "How do tigers found in Sumatra differ from those found in other areas?",
+      "answer": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor mollitia labore, saepe minus sit laboriosam quis. Reprehenderit incidunt, repellendus magnam voluptatum nisi, dolores perspiciatis ipsum odio dolore, neque ullam."
+   },
+   {
+      "category": "birds",
+      "id": 2,
+      "question": "How do birds fly?",
+      "answer": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor mollitia labore, saepe minus sit laboriosam quis. Reprehenderit incidunt, repellendus magnam voluptatum nisi, dolores perspiciatis ipsum odio dolore, neque ullam."
+   },
+   {
+      "category": "birds",
+      "id": 2,
+      "question": "Can all birds fly?",
+      "answer": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor mollitia labore, saepe minus sit laboriosam quis. Reprehenderit incidunt, repellendus magnam voluptatum nisi, dolores perspiciatis ipsum odio dolore, neque ullam."
+   },
+   {
+      "category": "birds",
+      "id": 2,
+      "question": "What do birds eat?",
+      "answer": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor mollitia labore, saepe minus sit laboriosam quis. Reprehenderit incidunt, repellendus magnam voluptatum nisi, dolores perspiciatis ipsum odio dolore, neque ullam."
+   },
+   {
+      "category": "predators",
+      "id": 3,
+      "question": "Why do predators have sharp teeth?",
+      "answer": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor mollitia labore, saepe minus sit laboriosam quis. Reprehenderit incidunt, repellendus magnam voluptatum nisi, dolores perspiciatis ipsum odio dolore, neque ullam."
+   }
+]

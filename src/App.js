@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { SpeciesProvider } from "./components/ContextDataSearch";
+import { OverallResults } from "./components/OverallResults";
+import SearchBar from "./components/SearchBar";
+import './app.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <div className="main-title">
+        <h1>You have questions, we have answers.</h1>
+        <h3>Search or browse our FAQS below.</h3>
+      </div>
+      <SpeciesProvider>
+        <SearchBar />
+        <OverallResults />
+      </SpeciesProvider>
     </div>
   );
 }
