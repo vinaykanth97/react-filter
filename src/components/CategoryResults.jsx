@@ -36,7 +36,7 @@ export const CategoryResults = ({ speciesContextList, filteredSpecies, searchedW
             }
             return filteredSpecies
         })
-        // console.log(openAcc)
+
         setfilteredSpecies(openAcc)
     }
 
@@ -46,7 +46,7 @@ export const CategoryResults = ({ speciesContextList, filteredSpecies, searchedW
                 return (
                     species.found && (
                         <div className={`faq`} key={index}>
-                            <div className={`faq-wrap ${species.active ? 'active' : ''}`} onClick={(e) => AccordionHandler(e, species.id)}>
+                            <div className={`faq-wrap ${species.active ? 'active' : ''}`} onClick={(e) => AccordionHandler(e, species.identity)}>
                                 <div className="icon">
                                     <span className="line-1"></span>
                                     <span className="line-2"></span>
@@ -61,7 +61,7 @@ export const CategoryResults = ({ speciesContextList, filteredSpecies, searchedW
                                 </h3>
                             </div>
 
-                           
+
                             <p className={`${species.active ? 'd-block' : ''}`}>{species.answer}</p>
                         </div>
                     )
