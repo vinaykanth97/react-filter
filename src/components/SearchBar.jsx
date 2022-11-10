@@ -6,7 +6,7 @@ export default function SearchBar() {
     const speciesContextList = useContext(SpeciesContext)
     const SearchHandler = (e) => {
         let keyValue = e.target.value.toLowerCase()
-        speciesContextList.setsearchedWord(keyValue)
+        speciesContextList.setsearchedWord(keyValue)   
     }
     return (
         <form className='searchbox'>
