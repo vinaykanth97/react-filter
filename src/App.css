@@ -81,16 +81,18 @@ ul li {
 }
 
 .faq p {
-    /* height: 0; */
-    display: none;
+    height: 0;
+    /* display: none; */
     overflow: hidden;
     transition: 0.3s height ease;
     margin: 5px 0 0 0;
 }
-
-.faq p.d-block {
-    display: block;
-}
+/* .faq .faq-wrap.active + p{
+    height: 200px;
+} */
+/* .faq p.d-block {
+    height: 0;
+} */
 
 .faq .icon {
     max-width: 20px;

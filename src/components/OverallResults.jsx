@@ -8,8 +8,8 @@ export const OverallResults = () => {
 
     return (
         <div className='overall-results'>
-            <Categories speciesContextList={speciesContextList.speciesData} filteredSpecies={speciesContextList.filteredSpecies} setfilteredSpecies={speciesContextList.setfilteredSpecies} searchedWord={speciesContextList.searchedWord} setfoundLength={speciesContextList.setfoundLength} />
-            <CategoryResults speciesContextList={speciesContextList.speciesData} filteredSpecies={speciesContextList.filteredSpecies} setfilteredSpecies={speciesContextList.setfilteredSpecies} searchedWord={speciesContextList.searchedWord} foundLength={speciesContextList.foundLength} setfoundLength={speciesContextList.setfoundLength} />
+            <Categories speciesContextList={speciesContextList.speciesData} filteredSpecies={speciesContextList.filteredSpecies} setfilteredSpecies={speciesContextList.setfilteredSpecies} searchedWord={speciesContextList.searchedWord} setfoundLength={speciesContextList.setfoundLength} answerRef={speciesContextList.answerRef}/>
+            <CategoryResults speciesContextList={speciesContextList.speciesData} filteredSpecies={speciesContextList.filteredSpecies} setfilteredSpecies={speciesContextList.setfilteredSpecies} searchedWord={speciesContextList.searchedWord} foundLength={speciesContextList.foundLength} setfoundLength={speciesContextList.setfoundLength} answerRef={speciesContextList.answerRef} />
         </div>
     )
 }

@@ -1,23 +1,33 @@
 
 
-export const Categories = ({ speciesContextList, setfilteredSpecies, searchedWord, setfoundLength, filteredSpecies }) => {
+export const Categories = ({ speciesContextList, setfilteredSpecies, searchedWord, setfoundLength, filteredSpecies, answerRef }) => {
     const seen = new Set();
     let filteredSpeciesCategory = speciesContextList.filter((species) => {
         const duplicate = seen.has(species.id);
         seen.add(species.id);
         return !duplicate;
     })
-    console.log(filteredSpeciesCategory )
+
     const FilterHandler = (e, index) => {
 
-        let filteredModel = speciesContextList.filter(speciesList => {
+        let filteredModel = speciesContextList.filter((speciesList, i) => {
+
+
             return speciesList.category === index
         })
         if (searchedWord.length === 0) {
             speciesContextList.forEach(species => species['found'] = true)
         }
+
+
+
         setfilteredSpecies(filteredModel)
         setfoundLength(filteredModel.length)
+
+        filteredSpecies.map((species, index) => {
+            answerRef.current[index].style.height = ""
+            species.active = false
+        })
     }
     return (
         <ul className='category-filters'>
